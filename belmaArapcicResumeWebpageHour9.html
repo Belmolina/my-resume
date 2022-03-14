@@ -1,0 +1,163 @@
+<!--Hour nine - I figured out that I can use inspect element on page I created to check what I'm doing wrong. Finally I'm on track of what I wanted my resume webpage to look like. Didn't update much, still need better understanding of grid and how to use it cause it's slowing me down.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, hight=device-height, initial-scale=1.0">
+    <title>Belma Arapcic CV</title>
+    <style>
+        body {
+            background-image: url('vector-female-developer.jpg');
+            background-repeat: no-repeat;
+        }
+        .background-color {
+            color: rgb(204, 204, 204);
+        }
+        .h1 {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        .container {
+            font-size: 15px;
+            min-height: 100px;
+            width: 100%;
+            background: rgb(205, 219, 236);
+            display: grid;
+            grid-template-columns: repeat(2, minmax(100px, 1fr));
+            text-align: center;
+            grid-template-rows: 1fr;
+            grid-gap: 10px;
+        }
+
+        .container2 {
+            font-size: 15px;
+            min-height: 100px;
+            width: 100%;
+            background: rgb(205, 219, 236);
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto 1fr;
+            grid-gap: 10px;
+        }
+        .container3 {
+            font-size: 15px;
+            min-height: 100px;
+            width: 100%;
+            background: rgb(205, 219, 236);
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 10px;
+            flex-direction: row;
+            display: grid;
+        }
+        .item1-1 {
+            order: 1;  
+        }
+
+        .item1-2 {
+            order: 2;  
+        }
+
+        .item1-3 {
+            order: 3;  
+        }
+
+        .item2-1 {
+            order: 4;
+        }
+
+        .item2-2 {
+            order: 5;
+        }
+
+        .item2-3 {
+            order: 6;
+        }
+        
+        
+    </style>
+</head> 
+<body>
+    <h1 class="h1">Belma Arapcic - CV</h1>
+    <br>
+    <br>
+    <div class="container">
+        <h3 class="item1"> Contact:</h3>
+        <div class="item2"> 
+            <div>E-mail: belma.arapcic@gmail.com</div>
+            <div>Phone number: +38762811691</div>
+            <div>Adress: Bokavici bb, 75300 Lukavac, Bosnia and Herzegovina</div>
+        </div>
+    </div>
+    <br>
+    <div class="container3">
+        <h3 class="itemOne">Work experience:</h3>
+        <div class="item2"><strong>Mar 2021 - Apr 2021</strong>
+        
+            <div>Food Service, Specialist</div>
+            <div>Fluor Corp.; Afghanistan</div>
+        
+        </div>
+                <div class="itemTwo">Job description: Preparating food and beverages. Preparing dishes. Cook on the grill. Assures temperatures are properly maintained. Keeping workspace clean. </div>
+        
+        <br>
+        <div class="item2"><strong>Aug 2020 - Mar 2021</strong>
+            <div>Food Service, Food Service Worker III</div>
+            <div>Fluor Corp.; Afghanistan</div>
+        </div>
+                <div class="itemTwo">Job description: Washing dishes. Helping chefs with cooking. Preparing simple dishes. Baking cakes, cookies, bread. Serving costumers. Ensuring the food preparation areas are clean and hygienic. </div>
+        <br>
+        <div class="item2"><strong>Feb 2020 - Aug 2020</strong>
+            <div>Food Service, Food Service Worker I</div>
+            <div>Fluor Corp.; Afghanistan</div>
+            </div>
+                <div class="itemTwo">Job description: Simple tasks like washing, peeling, cutting vegetables and fruits. Fills condiments. Setting-up serving line, serve food, garnish food. Fills flatware. </div>
+        <br>
+        <br>
+        <div class="item2"><strong>Oct 2018 - Jan 2020</strong>
+            <div>Promotions, Promotor</div>
+            <div>Extra d.o.o Tuzla; Lukavac</div>
+            </div>    
+            <div class="itemTwo">Job description: Providing all needed information on promoted products and services. Assist costumers in finding suitable product they are looking for. Submit daily sales report.</div>
+        
+    </div>
+    <br>
+    <div class="container" >
+        <h3 >Education:</h3>
+        <div class="item2"><strong>Oct 2015 - Present</strong>
+            <div>Major: Occupational safety</div>
+            <div>University of Tuzla, Faculty of Technology </div>
+        </div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item1-3"><strong>Proffesional skills</strong></div>
+            <div class="item2-1">
+                <div>English language</div>
+                <div>Drivers license</div>
+                <div>Cooking</div>
+            </div>
+        <div class="item1-2"><strong>Personal skills</strong></div>
+            <div class="item2-2">
+                <div>Positive attitude</div>
+                <div>Openess to learning</div>
+                <div>Communication</div>
+                <div>Flexibility</div>
+                <div>Problem solving</div>
+                <div>Teamwork</div>
+            </div>
+        <div class="item1-3"><strong>Hobbies</strong></div>
+            <div class="item2-3">
+                <div>Writing</div>
+                <div>Swimming</div>
+                <div>Hiking</div>
+                <div>Fitness</div>
+            </div>
+    </div>
+    <br>
+        
+</body>
+</html>
